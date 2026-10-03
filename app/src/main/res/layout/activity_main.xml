@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DialogHub"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#172033"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Dialog Demonstration"
+            android:textSize="16sp"
+            android:textColor="#687386"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q2  Feedback Dialog"/>
+
+        <Button
+            android:id="@+id/q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q4  AlertDialog Actions"/>
+
+        <Button
+            android:id="@+id/q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q6  Course Selection"/>
+
+        <Button
+            android:id="@+id/q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q7  Hobby Selection"/>
+
+        <Button
+            android:id="@+id/q8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q8  DialogFragment"/>
+
+        <Button
+            android:id="@+id/q9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q9  Login Validation"/>
+
+        <Button
+            android:id="@+id/q10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q10  Order Confirmation"/>
+
+    </LinearLayout>
+
+</ScrollView>
