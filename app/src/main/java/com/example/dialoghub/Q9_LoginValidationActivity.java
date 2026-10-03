@@ -31,10 +31,10 @@ public class Q9_LoginValidationActivity extends AppCompatActivity {
     private void showLoginDialog() {
 
         View view = LayoutInflater.from(this)
-                .inflate(R.layout.dialog_login, null);
+                .inflate(R.layout.dialog_q9_login, null);
 
-        EditText username = view.findViewById(R.id.username);
-        EditText password = view.findViewById(R.id.password);
+        EditText username = view.findViewById(R.id.loginUsername);
+        EditText password = view.findViewById(R.id.loginPassword);
 
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Login Validation")
