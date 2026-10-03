@@ -35,6 +35,10 @@ public class Q10_OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q10_order);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Spinner spinner = findViewById(R.id.foodSpinner);
         EditText quantity =
                 findViewById(R.id.quantity);
@@ -86,6 +90,12 @@ public class Q10_OrderActivity extends AppCompatActivity {
 
             showOrderDialog(item, qty, total);
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     private void showOrderDialog(

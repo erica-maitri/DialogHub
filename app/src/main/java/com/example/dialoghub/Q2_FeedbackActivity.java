@@ -19,10 +19,20 @@ public class Q2_FeedbackActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q2_feedback);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Button button = findViewById(R.id.feedbackButton);
         result = findViewById(R.id.feedbackResult);
 
         button.setOnClickListener(v -> showFeedbackDialog());
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     private void showFeedbackDialog() {

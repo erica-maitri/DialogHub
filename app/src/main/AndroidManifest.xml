@@ -10,36 +10,38 @@
 
         <activity
             android:name=".Q10_OrderActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q9_LoginValidationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q8_DialogFragmentActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q7_HobbyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q6_CourseActivity"
-            android:exported="false" />
-
-
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q4_AlertDialogActivity"
-            android:exported="false" />
-
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".Q2_FeedbackActivity"
-            android:exported="false" />
-
-
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".MainActivity"

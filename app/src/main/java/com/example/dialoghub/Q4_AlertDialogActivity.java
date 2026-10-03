@@ -16,6 +16,10 @@ public class Q4_AlertDialogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q4_alert);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Button button = findViewById(R.id.showAlert);
         result = findViewById(R.id.alertResult);
 
@@ -34,5 +38,11 @@ public class Q4_AlertDialogActivity extends AppCompatActivity {
 
             dialog.show();
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

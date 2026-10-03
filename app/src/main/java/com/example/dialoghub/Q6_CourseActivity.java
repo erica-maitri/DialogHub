@@ -19,10 +19,20 @@ public class Q6_CourseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q6_course);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Button button = findViewById(R.id.selectCourse);
         result = findViewById(R.id.courseResult);
 
         button.setOnClickListener(v -> showCourseDialog());
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     private void showCourseDialog() {

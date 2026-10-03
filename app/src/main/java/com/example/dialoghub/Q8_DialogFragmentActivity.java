@@ -16,6 +16,10 @@ public class Q8_DialogFragmentActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q8_fragment);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Button button = findViewById(R.id.openFragment);
         result = findViewById(R.id.fragmentResult);
 
@@ -29,6 +33,12 @@ public class Q8_DialogFragmentActivity extends AppCompatActivity
                     "InputDialog"
             );
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     @Override

@@ -19,10 +19,20 @@ public class Q7_HobbyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q7_hobby);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Button button = findViewById(R.id.selectHobby);
         result = findViewById(R.id.hobbyResult);
 
         button.setOnClickListener(v -> showHobbyDialog());
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     private void showHobbyDialog() {
